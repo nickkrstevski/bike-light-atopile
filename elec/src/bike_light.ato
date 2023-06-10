@@ -32,10 +32,10 @@ module BikeLight:
     led_driver.vin ~ vin
 
     # Connect the LED driver outputs and chain the LEDs in series
-    led_driver.led_positive ~ led1.positive
-    led1.negative ~ led2.positive
-    led2.negative ~ led3.positive
-    led3.negative ~ led_driver.led_negative
+    led_driver.led_pos ~ led1.pos
+    led1.neg ~ led2.pos
+    led2.neg ~ led3.pos
+    led3.neg ~ led_driver.led_neg
 
     # Instantiate a USB-C connector and connect it
     usbc = new Usbc

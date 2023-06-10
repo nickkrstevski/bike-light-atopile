@@ -53,8 +53,8 @@ module LedDriver:
     signal out # Signal would appear like arrows within the module
     signal pwm #TODO: choose if can be stub or not
 
-    signal led_positive # To be used outside the module to connect the LED
-    signal led_negative
+    signal led_pos # To be used outside the module to connect the LED
+    signal led_neg
 
     vin.visualizer.stub = True
     gnd.visualizer.stub = True
@@ -64,8 +64,8 @@ module LedDriver:
     vin.visualizer.location = "top"
     gnd.visualizer.location = "bottom"
     pwm.visualizer.location = "left"
-    led_positive.visualizer.location = "right"
-    led_negative.visualizer.location = "right"
+    led_pos.visualizer.location = "right"
+    led_neg.visualizer.location = "right"
 
 
     # Input bypass capa
@@ -132,13 +132,13 @@ module LedDriver:
     led_driver.isn2 ~ r_sens.p2
 
     # Connect the outputs
-    
+
     # led nmos, suggest using: C145552
     nmos_led = new Nmos4Pin
     nmos_led.footprint = "bike_light_lib:SOT-223_L6.5-W3.5-P2.30-LS7.0-BR"
 
-    led_positive ~ r_sens.p2
-    led_negative ~ nmos_led.drain
+    led_pos ~ r_sens.p2
+    led_neg ~ nmos_led.drain
 
     # Low side nmos
     nmos_led.source ~ gnd
