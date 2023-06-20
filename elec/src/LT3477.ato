@@ -99,8 +99,8 @@ module LedDriver:
     diode_boost = new Diode
     diode_boost.footprint = "Diode_SMD:D_SOD-123"
 
-    led_driver.sw ~ diode_boost.pp
-    diode_boost.pn ~ out
+    led_driver.sw ~ diode_boost.anode
+    diode_boost.cathode ~ out
 
     # Negative feedback
 
@@ -155,8 +155,8 @@ module LedDriver:
     diode_pwm = new Diode
     diode_pwm.footprint = "Diode_SMD:D_SOD-123"
 
-    led_driver.vc ~ diode_pwm.pp
-    diode_pwm.pn ~ pwm
+    led_driver.vc ~ diode_pwm.anode
+    diode_pwm.cathode ~ pwm
 
     nmos_pwm = new Nmos3Pin
     nmos_pwm.footprint = "bike_light_lib:SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR"
