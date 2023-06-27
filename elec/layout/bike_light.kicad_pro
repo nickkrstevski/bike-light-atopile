@@ -294,7 +294,7 @@
     "last_paths": {
       "gencad": "",
       "idf": "",
-      "netlist": "../src/build/bike_light.net",
+      "netlist": "../../build/bike_light.net",
       "specctra_dsn": "",
       "step": "",
       "vrml": ""
