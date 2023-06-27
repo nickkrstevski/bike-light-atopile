@@ -38,6 +38,11 @@ module BikeLight:
     led2.neg ~ led3.pos
     led3.neg ~ led_driver.led_neg
 
+    # Sink the LEDs to ground
+    led1.heat_sink ~ gnd
+    led2.heat_sink ~ gnd
+    led3.heat_sink ~ gnd
+
     # Instantiate a USB-C connector and connect it
     usbc = new Usbc
 
