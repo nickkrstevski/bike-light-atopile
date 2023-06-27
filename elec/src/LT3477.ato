@@ -107,7 +107,7 @@ module LedDriver:
     # Instantiate a voltage divider
     feedback_vdiv = new Vdiv
     feedback_vdiv.r_top.value = "1M" #FIXME: sythax highlighting for single '' as well as ""
-    feedback_vdiv.r_bt.value = "75k"
+    feedback_vdiv.r_bt.value = "41.2k"
 
     out ~ feedback_vdiv.input
     led_driver.fbn ~ feedback_vdiv.output
@@ -125,7 +125,7 @@ module LedDriver:
 
     # Current sense
     r_sens = new Resistor
-    r_sens.value = "0.33R"
+    r_sens.value = "1R"
 
     led_driver.isp2 ~ out
     r_sens.p1 ~ out
