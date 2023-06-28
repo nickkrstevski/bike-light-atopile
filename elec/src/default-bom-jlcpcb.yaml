@@ -70,7 +70,7 @@ by-spec:
   value: 1R
   jlcpcb: C966091
 - instance_of: std/resistor.ato/Resistor
-  footprint: Resistor_SMD:R_1206_1608Metric
+  footprint: Resistor_SMD:R_0603_1608Metric
   value: 41.2k
   jlcpcb: C2930101
 - instance_of: pin_header.ato/PinHeader3
