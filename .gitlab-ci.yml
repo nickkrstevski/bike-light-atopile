@@ -3,7 +3,7 @@ stages:
   - build
   - store
 
-check:
+check-ato:
   stage: check
   image: registry.atopile.io/atopile/atopile:latest
   script:
@@ -31,11 +31,11 @@ build-gerbers:
     paths:
       - build/
 
-build-bom:
+build-ato:
   stage: build
   image: registry.atopile.io/atopile/atopile:latest
   script:
-    - ato build --target "bom-jlcpcb" elec/src
+    - ato build elec/src
   artifacts:
     paths:
       - build/
