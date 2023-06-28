@@ -26,6 +26,7 @@ component LT3477:
     signal isn1 ~ pin p16 # (Pin 16/Pin 14): First Current Sense (–) Pin
     signal gnd ~ pin p17 # (Pins 17/Pin 15): Ground, (Pin 21/Pin 21): Power Ground
     signal sw ~ pin p18 # (Pins 18, 19/Pins 16, 17): Switch Pins.
+    gnd ~ pin p21 # power gnd
 
     footprint = "Package_DFN_QFN:QFN-20-1EP_4x4mm_P0.5mm_EP2.5x2.5mm_ThermalVias"
     designator_prefix = "U"
@@ -124,12 +125,13 @@ module LedDriver:
     c_bypass_output.p2 ~ gnd
 
     # Current sense
-    r_sens = new Resistor
-    r_sens.value = "1R"
+    r_shunt = new Resistor
+    r_shunt.value = "1R"
+    r_shunt.footprint = "Resistor_SMD:R_1206_3216Metric"
 
     led_driver.isp2 ~ out
-    r_sens.p1 ~ out
-    led_driver.isn2 ~ r_sens.p2
+    r_shunt.p1 ~ out
+    led_driver.isn2 ~ r_shunt.p2
 
     # Connect the outputs
 
@@ -137,7 +139,7 @@ module LedDriver:
     nmos_led = new Nmos4Pin
     nmos_led.footprint = "bike_light_lib:SOT-223_L6.5-W3.5-P2.30-LS7.0-BR"
 
-    led_pos ~ r_sens.p2
+    led_pos ~ r_shunt.p2
     led_neg ~ nmos_led.drain
 
     # Low side nmos
