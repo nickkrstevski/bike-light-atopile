@@ -64,14 +64,14 @@ by-spec:
 - instance_of: std/resistor.ato/Resistor
   footprint: Resistor_SMD:R_0603_1608Metric
   value: 1R
-  jlcpcb: <fill-me>
-- instance_of: pin_header.ato/PinHeader3
-  footprint: Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical
-  jlcpcb: <fill-me>
+  jlcpcb: 0603
 - instance_of: std/resistor.ato/Resistor
   footprint: Resistor_SMD:R_0603_1608Metric
   value: 41.2k
-  jlcpcb: <fill-me>
+  jlcpcb: C218023
+- instance_of: pin_header.ato/PinHeader3
+  footprint: Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical
+  jlcpcb: ignore
 explicit:
   bike_light.ato/BikeLight/led_driver/diode_boost: C110729
   bike_light.ato/BikeLight/led_driver/diode_pwm: C117823
