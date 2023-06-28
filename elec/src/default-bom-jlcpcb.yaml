@@ -65,7 +65,7 @@ by-spec:
   footprint: Resistor_SMD:R_0603_1608Metric
   value: 1R
   jlcpcb: C5126122
-- instance_of: resistor_no_footprint.ato/ResistorNoFp
+- instance_of: std/resistor.ato/Resistor
   footprint: Resistor_SMD:R_1206_3216Metric
   value: 1R
   jlcpcb: C966091

@@ -1,7 +1,6 @@
 # Driver LT3477: https://datasheet.lcsc.com/lcsc/2205191145_Analog-Devices-LT3477IUF-TRPBF_C670655.pdf
 
 import Resistor from "std/resistor.ato"
-import ResistorNoFp from "resistor_no_footprint.ato"
 import Capacitor from "std/capacitor.ato"
 import Inductor from "std/inductor.ato"
 import Diode from "diode.ato"
@@ -126,7 +125,7 @@ module LedDriver:
     c_bypass_output.p2 ~ gnd
 
     # Current sense
-    r_shunt = new ResistorNoFp
+    r_shunt = new Resistor
     r_shunt.value = "1R"
     r_shunt.footprint = "Resistor_SMD:R_1206_3216Metric"
 

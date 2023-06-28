@@ -1,7 +1,0 @@
-component ResistorNoFp:
-    pin p1
-    pin p2
-    designator_prefix = "R"
-
-    p1.visualizer.location = "top"
-    p2.visualizer.location = "bottom"

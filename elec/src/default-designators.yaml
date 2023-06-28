@@ -5,7 +5,6 @@ bike_light.ato/BikeLight/led_driver/c_soft_start: C3
 bike_light.ato/BikeLight/led_driver/r_timing: R1
 bike_light.ato/BikeLight/led_driver/diode_boost: D1
 bike_light.ato/BikeLight/led_driver/diode_pwm: D2
-bike_light.ato/BikeLight/led_driver/r_sens: R2
 bike_light.ato/BikeLight/led_driver/nmos_led: U1
 bike_light.ato/BikeLight/led_driver/nmos_pwm: U2
 bike_light.ato/BikeLight/led_driver/r_comp: R3
@@ -19,3 +18,4 @@ bike_light.ato/BikeLight/led2: D4
 bike_light.ato/BikeLight/led3: D5
 bike_light.ato/BikeLight/pwm_header: J2
 bike_light.ato/BikeLight/led_driver/led_driver: U3
+bike_light.ato/BikeLight/led_driver/r_shunt: R2
