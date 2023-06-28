@@ -1,6 +1,13 @@
 stages:
+  - check
   - build
   - store
+
+check:
+  stage: check
+  image: registry.atopile.io/atopile/atopile:latest
+  script:
+    - ato check elec/src
 
 build-gerbers:
   stage: build
