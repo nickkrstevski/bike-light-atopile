@@ -32,6 +32,10 @@ by-spec:
   footprint: bike_light_lib:IND-SMD_L2.5-W2.0_SLW252012P
   value: 2uH
   jlcpcb: C436611
+- instance_of: std/inductor.ato/Inductor
+  footprint: Inductor_SMD:L_Bourns-SRN4018
+  value: 2.2uH
+  jlcpcb: C2044386
 - instance_of: std/resistor.ato/Resistor
   footprint: Resistor_SMD:R_0603_1608Metric
   value: 0.33R
@@ -73,6 +77,10 @@ by-spec:
   footprint: Resistor_SMD:R_0603_1608Metric
   value: 41.2k
   jlcpcb: C2930101
+- instance_of: std/resistor.ato/Resistor
+  footprint: Resistor_SMD:R_0603_1608Metric
+  value: 60.4k
+  jlcpcb: C23089
 - instance_of: pin_header.ato/PinHeader3
   footprint: Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical
   jlcpcb: ignore
