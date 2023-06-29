@@ -107,7 +107,7 @@ module LedDriver:
 
     # Instantiate a voltage divider
     feedback_vdiv = new Vdiv
-    # Voltage output = 1.235 * 1 (r_top / r_bt)
+    # Voltage output = 1.235 * ( 1 + r_top / r_bt)
     feedback_vdiv.r_top.value = "1M" #FIXME: sythax highlighting for single '' as well as ""
     feedback_vdiv.r_bt.value = "60.4k"
 
