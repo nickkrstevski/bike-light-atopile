@@ -90,9 +90,9 @@ module LedDriver:
     led_driver.gnd ~ gnd
 
     # Boost
-    inductor = new Inductor # suggest inductor using IFSC1008ABER2R2M01
-    inductor.footprint = "bike_light_lib:IND-SMD_L2.5-W2.0_SLW252012P"
-    inductor.value = "2uH"  # FIXME: this was inductor = ... -> we need better behaviour on reassignment
+    inductor = new Inductor
+    inductor.footprint = "Inductor_SMD:L_Bourns-SRN4018"
+    inductor.value = "2.2uH"  # FIXME: this was inductor = ... -> we need better behaviour on reassignment
     vin ~ inductor.p1
     inductor.p2 ~ led_driver.sw
 
@@ -107,8 +107,9 @@ module LedDriver:
 
     # Instantiate a voltage divider
     feedback_vdiv = new Vdiv
+    # Voltage output = 1.235 * ( 1 + r_top / r_bt)
     feedback_vdiv.r_top.value = "1M" #FIXME: sythax highlighting for single '' as well as ""
-    feedback_vdiv.r_bt.value = "41.2k"
+    feedback_vdiv.r_bt.value = "60.4k"
 
     out ~ feedback_vdiv.input
     led_driver.fbn ~ feedback_vdiv.output

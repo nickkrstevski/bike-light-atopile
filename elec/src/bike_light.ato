@@ -23,7 +23,6 @@ module BikeLight:
     # Instantiate some LEDs
     led1 = new Led
     led2 = new Led
-    led3 = new Led
 
     # Instantiate the LED driver
     led_driver = new LedDriver
@@ -35,8 +34,7 @@ module BikeLight:
     # Connect the LED driver outputs and chain the LEDs in series
     led_driver.led_pos ~ led1.pos
     led1.neg ~ led2.pos
-    led2.neg ~ led3.pos
-    led3.neg ~ led_driver.led_neg
+    led2.neg ~ led_driver.led_neg
 
     # Instantiate a USB-C connector and connect it
     usbc = new Usbc
