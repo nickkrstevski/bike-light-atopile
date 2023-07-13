@@ -1,89 +1,89 @@
 by-spec:
-- instance_of: XL-C3570P8S11-62C3C2.ato/Led
+- instance_of: XL-C3570P8S11-62C3C2.ato:Led
   footprint: bike_light_lib:LED-SMD_3P-L7.0-W3.5_XL-C3570P5S10-62C3C2
   jlcpcb: C3646958
-- instance_of: std/resistor.ato/Resistor
+- instance_of: std/resistor.ato:Resistor
   footprint: Resistor_SMD:R_0603_1608Metric
   value: 6.81k
   jlcpcb: C2076645
-- instance_of: std/resistor.ato/Resistor
+- instance_of: std/resistor.ato:Resistor
   footprint: Resistor_SMD:R_0603_1608Metric
   value: 75k
   jlcpcb: C101185
-- instance_of: nmos.ato/Nmos4Pin
+- instance_of: nmos.ato:Nmos4Pin
   footprint: bike_light_lib:SOT-223_L6.5-W3.5-P2.30-LS7.0-BR
   jlcpcb: C416325
-- instance_of: std/resistor.ato/Resistor
+- instance_of: std/resistor.ato:Resistor
   footprint: Resistor_SMD:R_0603_1608Metric
   value: 2.4k
   jlcpcb: C465465
-- instance_of: usbc.ato/Usbc
+- instance_of: usbc.ato:Usbc
   footprint: bike_light_lib:USB-C-SMD_KH-TYPE-C-16P
   jlcpcb: C709357
-- instance_of: std/resistor.ato/Resistor
+- instance_of: std/resistor.ato:Resistor
   footprint: Resistor_SMD:R_0603_1608Metric
   value: 100k
   jlcpcb: C304064
-- instance_of: std/capacitor.ato/Capacitor
+- instance_of: std/capacitor.ato:Capacitor
   footprint: Capacitor_SMD:C_0603_1608Metric
   value: 10uF
   jlcpcb: C86275
-- instance_of: std/inductor.ato/Inductor
+- instance_of: std/inductor.ato:Inductor
   footprint: bike_light_lib:IND-SMD_L2.5-W2.0_SLW252012P
   value: 2uH
   jlcpcb: C436611
-- instance_of: std/inductor.ato/Inductor
+- instance_of: std/inductor.ato:Inductor
   footprint: Inductor_SMD:L_Bourns-SRN4018
   value: 2.2uH
   jlcpcb: C2044386
-- instance_of: std/resistor.ato/Resistor
+- instance_of: std/resistor.ato:Resistor
   footprint: Resistor_SMD:R_0603_1608Metric
   value: 0.33R
   jlcpcb: C23410
-- instance_of: pin_header_2.ato/PinHeader2
+- instance_of: pin_header_2.ato:PinHeader2
   footprint: Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical
   jlcpcb: ignore
-- instance_of: LT3477.ato/LT3477
+- instance_of: LT3477.ato:LT3477
   footprint: Package_DFN_QFN:QFN-20-1EP_4x4mm_P0.5mm_EP2.5x2.5mm_ThermalVias
   jlcpcb: C670650
-- instance_of: std/capacitor.ato/Capacitor
+- instance_of: std/capacitor.ato:Capacitor
   footprint: Capacitor_SMD:C_0603_1608Metric
   value: 3.3uF
   jlcpcb: C126629
-- instance_of: std/resistor.ato/Resistor
+- instance_of: std/resistor.ato:Resistor
   footprint: Resistor_SMD:R_0603_1608Metric
   value: 1M
   jlcpcb: C22935
-- instance_of: std/capacitor.ato/Capacitor
+- instance_of: std/capacitor.ato:Capacitor
   footprint: Capacitor_SMD:C_0603_1608Metric
   value: 10nF
   jlcpcb: C76710
-- instance_of: std/capacitor.ato/Capacitor
+- instance_of: std/capacitor.ato:Capacitor
   footprint: Capacitor_SMD:C_0603_1608Metric
   value: 33nF
   jlcpcb: C2171923
-- instance_of: nmos.ato/Nmos3Pin
+- instance_of: nmos.ato:Nmos3Pin
   footprint: bike_light_lib:SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR
   jlcpcb: C8545
-- instance_of: std/resistor.ato/Resistor
+- instance_of: std/resistor.ato:Resistor
   footprint: Resistor_SMD:R_0603_1608Metric
   value: 1R
   jlcpcb: C5126122
-- instance_of: std/resistor.ato/Resistor
+- instance_of: std/resistor.ato:Resistor
   footprint: Resistor_SMD:R_1206_3216Metric
   value: 1R
   jlcpcb: C966091
-- instance_of: std/resistor.ato/Resistor
+- instance_of: std/resistor.ato:Resistor
   footprint: Resistor_SMD:R_0603_1608Metric
   value: 41.2k
   jlcpcb: C2930101
-- instance_of: std/resistor.ato/Resistor
+- instance_of: std/resistor.ato:Resistor
   footprint: Resistor_SMD:R_0603_1608Metric
   value: 60.4k
   jlcpcb: C23089
-- instance_of: pin_header.ato/PinHeader3
+- instance_of: pin_header.ato:PinHeader3
   footprint: Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical
   jlcpcb: ignore
 explicit:
-  bike_light.ato/BikeLight/led_driver/diode_boost: C110729
-  bike_light.ato/BikeLight/led_driver/diode_pwm: C117823
+  bike_light.ato:BikeLight.led_driver.diode_boost: C110729
+  bike_light.ato:BikeLight.led_driver.diode_pwm: C117823
