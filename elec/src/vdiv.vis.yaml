@@ -1,4 +1,4 @@
-vdiv:
+Vdiv:
   ports:
   - name: top
     location: top
@@ -15,7 +15,7 @@ vdiv:
     index: 0
     private: false
     port: right
-  - name: ground
+  - name: gnd
     index: 0
     private: false
     port: bottom
@@ -23,7 +23,7 @@ vdiv:
   - name: input
     is_stub: true
   - name: output
-    is_stub: true
+    is_stub: false
   - name: gnd
     is_stub: false
   child_attrs:
@@ -33,15 +33,5 @@ vdiv:
         y: 10
     r_bt:
       position:
-        x: 10
-        y: 100
-Vdiv:
-  child_attrs:
-    r_bt:
-      position:
         x: 50
-        y: 50
-    r_top:
-      position:
-        x: 50
-        y: 225
+        y: 170

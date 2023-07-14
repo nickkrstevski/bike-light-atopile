@@ -1,19 +1,15 @@
-Led:
+Resistor:
   ports:
     - name: top
       location: top
     - name: bottom
       location: bottom
   pins:
-    - name: pos
+    - name: p1
       index: 0
       private: false
       port: top
-    - name: neg
-      index: 0
-      private: false
-      port: bottom
-    - name: heat_sink
+    - name: p2
       index: 0
       private: false
       port: bottom
