@@ -17,9 +17,6 @@ module BikeLight:
     signal vin
     signal gnd
 
-    # Define the location of the gnd signal on the module
-    gnd.visualizer.location = "bottom"
-
     # Instantiate some LEDs
     led1 = new Led
     led2 = new Led

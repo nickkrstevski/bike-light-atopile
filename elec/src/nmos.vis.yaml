@@ -1,4 +1,28 @@
-Diode:
+Nmos3Pin:
+  ports:
+    - name: top
+      location: top
+    - name: right
+      location: right
+    - name: bottom
+      location: bottom
+  pins:
+    - name: source
+      index: 0
+      private: false
+      port: top
+    - name: gate
+      index: 0
+      private: false
+      port: right
+    - name: drain
+      index: 0
+      private: false
+      port: bottom
+  signals: {}
+  child_attrs: {}
+
+Nmos4Pin:
   ports:
     - name: top
       location: top
