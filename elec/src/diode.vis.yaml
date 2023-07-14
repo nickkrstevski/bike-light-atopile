@@ -1,0 +1,17 @@
+Diode:
+  ports:
+    - name: right
+      location: right
+    - name: left
+      location: left
+  pins:
+    - name: anode
+      index: 0
+      private: false
+      port: right
+    - name: cathode
+      index: 0
+      private: false
+      port: left
+  signals: {}
+  child_attrs: {}

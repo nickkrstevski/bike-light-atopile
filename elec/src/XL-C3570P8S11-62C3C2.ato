@@ -9,6 +9,3 @@ component Led:
 
     # metadata
     designator_prefix = "D"
-    pos.visualizer.location = "top"
-    neg.visualizer.location = "bottom"
-    heat_sink.visualizer.location = "bottom"

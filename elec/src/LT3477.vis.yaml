@@ -1,0 +1,187 @@
+LT3477:
+  ports:
+  - name: top
+    location: top
+  - name: left
+    location: left
+  - name: right
+    location: right
+  - name: bottom
+    location: bottom
+  pins:
+  - name: vin
+    index: 0
+    private: false
+    port: left
+  - name: iadj1
+    index: 0
+    private: false
+    port: left
+  - name: iadj2
+    index: 0
+    private: false
+    port: left
+  - name: shdn
+    index: 0
+    private: false
+    port: left
+  - name: ss
+    index: 0
+    private: false
+    port: left
+  - name: vc
+    index: 0
+    private: false
+    port: left
+  - name: gnd
+    index: 0
+    private: false
+    port: bottom
+  - name: isp1
+    index: 0
+    private: false
+    port: top
+  - name: isn1
+    index: 0
+    private: false
+    port: top
+  - name: sw
+    index: 0
+    private: false
+    port: top
+  - name: fbn
+    index: 0
+    private: false
+    port: right
+  - name: fbp
+    index: 0
+    private: false
+    port: right
+  - name: vref
+    index: 0
+    private: false
+    port: right
+  - name: isp2
+    index: 0
+    private: false
+    port: right
+  - name: isn2
+    index: 0
+    private: false
+    port: right
+  - name: rt
+    index: 0
+    private: false
+    port: right
+  signals: {}
+  child_attrs: {}
+
+LedDriver:
+  ports:
+  - name: top
+    location: top
+  - name: left
+    location: left
+  - name: right
+    location: right
+  - name: bottom
+    location: bottom
+  pins:
+  - name: vin
+    index: 0
+    private: false
+    port: top
+  - name: gnd
+    index: 0
+    private: false
+    port: bottom
+  - name: out
+    index: 0
+    private: true
+    port: bottom
+  - name: pwm
+    index: 0
+    private: false
+    port: left
+  - name: led_pos
+    index: 0
+    private: false
+    port: right
+  - name: led_neg
+    index: 0
+    private: false
+    port: right
+  signals:
+  - name: vin
+    is_stub: true
+  - name: gnd
+    is_stub: true
+  - name: out
+    is_stub: true
+  - name: pwm
+    is_stub: true
+  - name: led_pos
+    is_stub: false
+  - name: led_neg
+    is_stub: false
+  child_attrs:
+    led_driver:
+      position:
+        x: 575
+        y: 375
+    feedback_vdiv:
+      position:
+        x: 915
+        y: 50
+    r_timing:
+      position:
+        x: 630
+        y: 540
+    nmos_pwm:
+      position:
+        x: 115
+        y: 645
+    c_soft_start:
+      position:
+        x: 155
+        y: 565
+    c_comp:
+      position:
+        x: 550
+        y: 645
+    r_comp:
+      position:
+        x: 555
+        y: 580
+    diode_pwm:
+      position:
+        x: 245
+        y: 465
+    r_pwm:
+      position:
+        x: 355
+        y: 605
+    nmos_led:
+      position:
+        x: 970
+        y: 595
+    r_shunt:
+      position:
+        x: 1020
+        y: 280
+    c_bypass_output:
+      position:
+        x: 760
+        y: 230
+    diode_boost:
+      position:
+        x: 705
+        y: 110
+    inductor:
+      position:
+        x: 400
+        y: 250
+    c_bypass_input:
+      position:
+        x: 260
+        y: 270

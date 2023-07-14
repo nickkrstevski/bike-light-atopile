@@ -1,0 +1,22 @@
+BikeLight:
+  child_attrs:
+    led_driver:
+      position:
+        x: 235
+        y: 50
+    pwm_header:
+      position:
+        x: 50
+        y: 330
+    usbc:
+      position:
+        x: 140
+        y: 515
+    led2:
+      position:
+        x: 1380
+        y: 520
+    led1:
+      position:
+        x: 1395
+        y: 320

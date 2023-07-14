@@ -1,0 +1,21 @@
+Led:
+  ports:
+    - name: top
+      location: top
+    - name: bottom
+      location: bottom
+  pins:
+    - name: pos
+      index: 0
+      private: false
+      port: top
+    - name: neg
+      index: 0
+      private: false
+      port: bottom
+    - name: heat_sink
+      index: 0
+      private: false
+      port: bottom
+  signals: {}
+  child_attrs: {}

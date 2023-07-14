@@ -31,23 +31,6 @@ component LT3477:
     footprint = "Package_DFN_QFN:QFN-20-1EP_4x4mm_P0.5mm_EP2.5x2.5mm_ThermalVias"
     designator_prefix = "U"
 
-    vin.visualizer.location = "left"
-    iadj1.visualizer.location = "left"
-    iadj2.visualizer.location = "left"
-    shdn.visualizer.location = "left"
-    ss.visualizer.location = "left"
-    vc.visualizer.location = "left"
-    gnd.visualizer.location = "bottom"
-    isp1.visualizer.location = "top"
-    isn1.visualizer.location = "top"
-    sw.visualizer.location = "top"
-    fbn.visualizer.location = "right"
-    fbp.visualizer.location = "right"
-    vref.visualizer.location = "right"
-    isp2.visualizer.location = "right"
-    isn2.visualizer.location = "right"
-    rt.visualizer.location = "right"
-
 module LedDriver:
     signal vin #TODO: would be nice to make some signals private
     signal gnd # The published signals would end up on the outside edge of the module
@@ -56,18 +39,6 @@ module LedDriver:
 
     signal led_pos # To be used outside the module to connect the LED
     signal led_neg
-
-    vin.visualizer.stub = True
-    gnd.visualizer.stub = True
-    out.visualizer.stub = True
-    pwm.visualizer.stub = True
-
-    vin.visualizer.location = "top"
-    gnd.visualizer.location = "bottom"
-    pwm.visualizer.location = "left"
-    led_pos.visualizer.location = "right"
-    led_neg.visualizer.location = "right"
-
 
     # Input bypass capa
     c_bypass_input = new Capacitor
