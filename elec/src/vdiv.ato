@@ -6,10 +6,6 @@ module Vdiv:
     signal output
     signal gnd
 
-    input.visualizer.location = "top"
-    output.visualizer.location = "left"
-    gnd.visualizer.location = "bottom"
-
     r_top = new Resistor
     r_bt = new Resistor
 
