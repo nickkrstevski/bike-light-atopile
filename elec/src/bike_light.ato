@@ -20,6 +20,7 @@ module BikeLight:
     # Instantiate some LEDs
     led1 = new Led
     led2 = new Led
+    # led3 = new Led
 
     # Instantiate the LED driver
     led_driver = new LedDriver

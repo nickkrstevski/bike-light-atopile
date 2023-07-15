@@ -127,61 +127,61 @@ LedDriver:
   child_attrs:
     led_driver:
       position:
-        x: 575
-        y: 375
+        x: 325
+        y: 390
     feedback_vdiv:
       position:
-        x: 915
+        x: 490
         y: 50
     r_timing:
       position:
-        x: 630
-        y: 540
+        x: 475
+        y: 330
     nmos_pwm:
       position:
-        x: 115
-        y: 645
+        x: 175
+        y: 510
     c_soft_start:
       position:
-        x: 155
-        y: 565
+        x: 85
+        y: 480
     c_comp:
       position:
-        x: 550
-        y: 645
+        x: 310
+        y: 665
     r_comp:
       position:
-        x: 555
-        y: 580
+        x: 310
+        y: 585
     diode_pwm:
       position:
-        x: 245
-        y: 465
+        x: 105
+        y: 405
     r_pwm:
       position:
-        x: 355
-        y: 605
+        x: 175
+        y: 665
     nmos_led:
       position:
-        x: 970
-        y: 595
+        x: 540
+        y: 625
     r_shunt:
       position:
-        x: 1020
-        y: 280
+        x: 565
+        y: 355
     c_bypass_output:
       position:
-        x: 760
-        y: 230
+        x: 145
+        y: 205
     diode_boost:
       position:
-        x: 705
-        y: 110
+        x: 285
+        y: 130
     inductor:
       position:
-        x: 400
-        y: 250
+        x: 355
+        y: 210
     c_bypass_input:
       position:
-        x: 260
-        y: 270
+        x: 50
+        y: 295

@@ -1,22 +1,51 @@
 BikeLight:
+  ports:
+  - name: top
+    location: top
+  - name: right
+    location: right
+  - name: bottom
+    location: bottom
+  pins:
+  - name: gnd
+    index: 0
+    private: false
+    port: bottom
+  - name: gate
+    index: 0
+    private: false
+    port: right
+  - name: drain
+    index: 0
+    private: false
+    port: bottom
+  signals:
+  - name: vin
+    is_stub: true
+  - name: gnd
+    is_stub: true
   child_attrs:
     led_driver:
       position:
-        x: 235
+        x: 185
         y: 50
     pwm_header:
       position:
         x: 50
-        y: 330
+        y: 380
     usbc:
       position:
-        x: 140
-        y: 515
+        x: 60
+        y: 170
     led2:
       position:
-        x: 1380
-        y: 520
+        x: 970
+        y: 465
     led1:
       position:
-        x: 1395
-        y: 320
+        x: 967.5
+        y: 272.1
+    led3:
+      position:
+        x: 1100
+        y: 465
