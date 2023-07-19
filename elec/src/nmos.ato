@@ -1,14 +1,14 @@
 component Nmos3Pin:
-    signal gate ~ pin p1
-    signal drain ~ pin p2
-    signal source ~ pin p3
+    signal gate ~ pin 1
+    signal drain ~ pin 2
+    signal source ~ pin 3
 
     designator_prefix = "U"
 
 component Nmos4Pin:
-    signal gate ~ pin p1
-    signal drain ~ pin p2
-    signal source ~ pin p3
-    drain ~ pin p4
+    signal gate ~ pin 1
+    signal drain ~ pin 2
+    signal source ~ pin 3
+    drain ~ pin 4
 
     designator_prefix = "U"

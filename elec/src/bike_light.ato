@@ -44,6 +44,6 @@ module BikeLight:
     # Instantiate a 2 pin header and connect it
     pwm_header = new PinHeader3
 
-    pwm_header.p1 ~ gnd
-    pwm_header.p2 ~ led_driver.pwm
-    pwm_header.p3 ~ vin
+    pwm_header.1 ~ gnd
+    pwm_header.2 ~ led_driver.pwm
+    pwm_header.3 ~ vin

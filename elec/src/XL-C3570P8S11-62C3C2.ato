@@ -1,8 +1,8 @@
 component Led:
-    signal neg ~ pin p1
-    signal pos ~ pin p3
+    signal neg ~ pin 1
+    signal pos ~ pin 3
 
-    signal heat_sink ~ pin p2
+    signal heat_sink ~ pin 2
 
     # pacakge is pre-ordained
     footprint = "bike_light_lib:LED-SMD_3P-L7.0-W3.5_XL-C3570P5S10-62C3C2"

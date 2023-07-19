@@ -10,23 +10,23 @@ import Vdiv from "vdiv.ato"
 
 component LT3477:
     # pin fucntion (QFN/TSSOP)
-    signal vin ~ pin p3 # (Pin 3/Pin 1): input voltage
-    signal rt ~ pin p4 # (Pin 4/Pin 2): Timing Resistor Pin
-    signal shdn ~ pin p5 # (Pin 5/Pin 3): Shutdown.
-    signal ss ~ pin p6 # (Pin 6/Pin 4): Soft-Start.
-    signal vc ~ pin p7 # (Pin 7/Pin 5): Compensation Pin for Error Amplifier
-    signal fbn ~ pin p8 # (Pin 8/Pin 6): The Inverting Input to the Error Amplifier
-    signal fbp ~ pin p9 # (Pin 9/Pin 7): The Noninverting Input to the Error Amplifier
-    signal vref ~ pin p10 # (Pin 10/Pin 8): Bandgap Voltage Reference
-    signal iadj2 ~ pin p11 # (Pin 11/Pin 9): Second Current Sense Adjustment
-    signal iadj1 ~ pin p12 # (Pin 12/Pin 10): First Current Sense Adjustment
-    signal isp2 ~ pin p13 # (Pin 13/Pin 11): Second Current Sense (+) Pin
-    signal isn2 ~ pin p14 # (Pin 14/Pin 12): Second Current Sense (–) Pin
-    signal isp1 ~ pin p15 # (Pin 15/Pin 13): First Current Sense (+) Pin
-    signal isn1 ~ pin p16 # (Pin 16/Pin 14): First Current Sense (–) Pin
-    signal gnd ~ pin p17 # (Pins 17/Pin 15): Ground, (Pin 21/Pin 21): Power Ground
-    signal sw ~ pin p18 # (Pins 18, 19/Pins 16, 17): Switch Pins.
-    gnd ~ pin p21 # power gnd
+    signal vin ~ pin 3 # (Pin 3/Pin 1): input voltage
+    signal rt ~ pin 4 # (Pin 4/Pin 2): Timing Resistor Pin
+    signal shdn ~ pin 5 # (Pin 5/Pin 3): Shutdown.
+    signal ss ~ pin 6 # (Pin 6/Pin 4): Soft-Start.
+    signal vc ~ pin 7 # (Pin 7/Pin 5): Compensation Pin for Error Amplifier
+    signal fbn ~ pin 8 # (Pin 8/Pin 6): The Inverting Input to the Error Amplifier
+    signal fbp ~ pin 9 # (Pin 9/Pin 7): The Noninverting Input to the Error Amplifier
+    signal vref ~ pin 10 # (Pin 10/Pin 8): Bandgap Voltage Reference
+    signal iadj2 ~ pin 11 # (Pin 11/Pin 9): Second Current Sense Adjustment
+    signal iadj1 ~ pin 12 # (Pin 12/Pin 10): First Current Sense Adjustment
+    signal isp2 ~ pin 13 # (Pin 13/Pin 11): Second Current Sense (+) Pin
+    signal isn2 ~ pin 14 # (Pin 14/Pin 12): Second Current Sense (–) Pin
+    signal isp1 ~ pin 15 # (Pin 15/Pin 13): First Current Sense (+) Pin
+    signal isn1 ~ pin 16 # (Pin 16/Pin 14): First Current Sense (–) Pin
+    signal gnd ~ pin 17 # (Pins 17/Pin 15): Ground, (Pin 21/Pin 21): Power Ground
+    signal sw ~ pin 18 # (Pins 18, 19/Pins 16, 17): Switch Pins.
+    gnd ~ pin 21 # power gnd
 
     footprint = "Package_DFN_QFN:QFN-20-1EP_4x4mm_P0.5mm_EP2.5x2.5mm_ThermalVias"
     designator_prefix = "U"
