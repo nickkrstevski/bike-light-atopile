@@ -34,10 +34,10 @@ component Usbc:
     # signal rxm ~ pin A10
     # rxm ~ pin B10
 
-    signal shell ~ pin p1
-    shell ~ pin p2
-    shell ~ pin p3
-    shell ~ pin p4
+    signal shell ~ pin 1
+    shell ~ pin 2
+    shell ~ pin 3
+    shell ~ pin 4
 
     footprint = "bike_light_lib:USB-C-SMD_KH-TYPE-C-16P"
     designator_prefix = "J"

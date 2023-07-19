@@ -1,15 +1,15 @@
 component PinHeader2:
-    pin p1
-    pin p2
+    pin 1
+    pin 2
 
     designator_prefix = "J"
 
     footprint = "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 
 component PinHeader3:
-    pin p1
-    pin p2
-    pin p3
+    pin 1
+    pin 2
+    pin 3
 
     designator_prefix = "J"
 
